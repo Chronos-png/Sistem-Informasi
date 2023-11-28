@@ -17,8 +17,8 @@
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="#" class="searchform order-lg-last">
 			          <div class="form-group d-flex">
-			            <input type="text" class="form-control pl-3" placeholder="Search">
-			            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+			            <!-- <input type="text" class="form-control pl-3" placeholder="Search">
+			            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button> -->
 			          </div>
 			        </form>
 						</div>
@@ -46,17 +46,15 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
 	        	<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analisa</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="#">Page 1</a>
-                <a class="dropdown-item" href="#">Page 2</a>
-                <a class="dropdown-item" href="#">Page 3</a>
-                <a class="dropdown-item" href="#">Page 4</a>
+                <a class="dropdown-item" href="#">Nilai Alternatif</a>
+                <a class="dropdown-item" href="#">Nilai Kriteria</a>
               </div>
             </li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Work</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+	        	<li class="nav-item"><a href="#" class="nav-link">Data Alternatif</a></li>
+	        	<li class="nav-item"><a href="#" class="nav-link">Data Kriteria</a></li>
+	          <li class="nav-item"><a href="#" class="nav-link">Metode AHP</a></li>
 	        </ul>
 	      </div>
 	    </div>
