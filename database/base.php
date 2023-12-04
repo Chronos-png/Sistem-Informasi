@@ -10,5 +10,5 @@
 			die($e->getMessage());
 		}
 	}
-	return define("DB", connect('localhost', 'store', 'root', ''));
+	return define("DB", connect('localhost', 'si', 'root', ''));
 ?>
