@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2023 at 12:12 PM
+-- Generation Time: Dec 04, 2023 at 05:17 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -77,17 +77,17 @@ CREATE TABLE `wisata` (
 --
 
 INSERT INTO `wisata` (`idWisata`, `namaWisata`, `nilaiWisata`, `gambar`) VALUES
-(1, 'Desa Ambender', 0.093, 'ambender.jpeg'),
-(2, 'Desa Bulungan Barat', 0.093, 'bulunganBarat.jpeg'),
-(3, 'Desa Bulungan Branta', 0.087, 'bulunganBranta.jpeg'),
-(4, 'Desa Bulungan Haji', 0.09, 'bulunganHaji.jpeg'),
-(5, 'Desa Bulungan Timur', 0.09, 'bulanganTimur.jpeg'),
-(6, 'Desa Palesanggar', 0.094, 'palesanggar.png'),
-(7, 'Desa Pasanggar', 0.094, 'pasanggar.jpg'),
-(8, 'Desa Plakpak', 0.103, 'plakpak.jpeg'),
-(9, 'Desa Tebul Timur', 0.88, 'tebulTimur.jpg'),
-(10, 'Desa Tebul Barat', 0.088, 'tebulBarat.jpeg'),
-(11, 'Desa Tlagah', 0.084, 'tlagah.jpeg');
+(1, 'Desa Ambender', 0.09388, 'ambender.jpeg'),
+(2, 'Desa Bulungan Barat', 0.09233, 'bulunganBarat.jpeg'),
+(3, 'Desa Bulungan Branta', 0.08679, 'bulunganBranta.jpeg'),
+(4, 'Desa Bulungan Haji', 0.08945, 'bulunganHaji.jpeg'),
+(5, 'Desa Bulungan Timur', 0.08945, 'bulanganTimur.jpeg'),
+(6, 'Desa Palesanggar', 0.0941, 'palesanggar.png'),
+(7, 'Desa Pasanggar', 0.09345, 'pasanggar.jpg'),
+(8, 'Desa Plakpak', 0.10319, 'plakpak.jpeg'),
+(9, 'Desa Tebul Timur', 0.08767, 'tebulTimur.jpg'),
+(10, 'Desa Tebul Barat', 0.08745, 'tebulBarat.jpeg'),
+(11, 'Desa Tlagah', 0.0839, 'tlagah.jpeg');
 
 --
 -- Indexes for dumped tables
