@@ -8388,3 +8388,68 @@ h1, h2, h3, h4, h5,
   margin: 10px;
   margin-bottom: 10vh;
 }
+
+/* -----------------------JUDUL--------------------------- */
+
+.judul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#mahpcontent{
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.GbrHierarki{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  overflow: hidden;
+}
+.GbrHierarki img{
+  width: 80%;
+  margin-left: 10%;
+}
+.GbrHierarki p{
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 9%;
+}
+.GbrUKK{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  overflow: hidden;
+}
+.GbrUKK p{
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 9%;
+}
+.GbrUKK img{
+  width: 20%;
+  margin-left: 10%;
+}
+.GbrEA{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 100%;
+  overflow: hidden;
+}
+.GbrEA p{
+  color: #000;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 9%;
+}
+.GbrEA img{
+  width: 50%;
+  margin-left: 10%;
+}

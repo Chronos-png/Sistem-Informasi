@@ -44,17 +44,23 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-	        	<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analisa</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="#">Nilai Alternatif</a>
-                <a class="dropdown-item" href="#">Nilai Kriteria</a>
-              </div>
-            </li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Data Alternatif</a></li>
-	        	<li class="nav-item"><a href="#" class="nav-link">Data Kriteria</a></li>
-	          <li class="nav-item"><a href="#" class="nav-link">Metode AHP</a></li>
+	        	<li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
+						<!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analisa</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="#">Nilai Alternatif</a>
+						<a class="dropdown-item" href="#">Nilai Kriteria</a>
+					</div> -->
+            	</li>
+	        	<li class="nav-item"><a href="Data_Alternatif.php" class="nav-link">Data Alternatif</a></li>
+	        	<li class="nav-item"><a href="Data_Kriteria.php" class="nav-link">Data Kriteria</a></li>
+	          	<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metode AHP</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">	
+						<a href="Metode_AHP.php" class="dropdown-item">Pengertian</a>
+						<a href="Proses_Metode_AHP.php" class="dropdown-item">Proses Metode AHP</a>
+					</div>
+				</li>
 	        </ul>
 	      </div>
 	    </div>
