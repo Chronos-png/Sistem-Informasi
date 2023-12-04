@@ -61,6 +61,7 @@
 						<a href="Proses_Metode_AHP.php" class="dropdown-item">Proses Metode AHP</a>
 					</div>
 				</li>
+				<li class="nav-item"><a href="Rekomendasi.php" class="nav-link">Analisa Hasil Rekomendasi</a></li>
 	        </ul>
 	      </div>
 	    </div>

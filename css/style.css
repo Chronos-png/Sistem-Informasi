@@ -8381,7 +8381,7 @@ h1, h2, h3, h4, h5,
 .maincontent h2{
   margin: 10px;
 }
-.maincontent div{
+.isi{
   width: 80%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 50px;
@@ -8452,4 +8452,23 @@ h1, h2, h3, h4, h5,
 .GbrEA img{
   width: 50%;
   margin-left: 10%;
+}
+.desc{
+  margin-top: 1%;
+  width: 70%;
+  margin-left: 13%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+}
+.img-paragraph{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 27px; margin-bottom: 27px;
+}
+.img-paragraph p{
+  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
 }

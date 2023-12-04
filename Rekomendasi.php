@@ -1,4 +1,5 @@
 <?php
+    include("database/database.php");
     $data = GetDataWisata();
 ?>
 
@@ -18,9 +19,25 @@
 <body>
     <?php include("header.php") ?>
     
+    <div class="judul" style="margin-bottom: 10vh;"><h2> Urutan Rekomendasi Wisata</h2></div>
+    <div style="display:flex; flex-direction: column; justify-content: center; align-items: center;">
     <?php foreach($data as $wisata){?>
-        
+        <div class="card mb-3" style="max-width: 80%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+            <img src=<?php echo "si/".$wisata["gambar"]?> class="rounded" alt="..." style="width: 300px; height: 250px; margin-left: 50px;">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><?php echo $wisata["namaWisata"]?></h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+            </div>
+        </div>
+        </div>
     <?php }?>
+    </div>
 
     <?php include("footer.php")?>
 </body>
