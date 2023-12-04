@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 28, 2023 at 06:14 AM
+-- Generation Time: Dec 04, 2023 at 12:12 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -68,10 +68,26 @@ CREATE TABLE `visitor` (
 CREATE TABLE `wisata` (
   `idWisata` int(11) NOT NULL,
   `namaWisata` varchar(128) NOT NULL,
-  `peringkatWisata` int(11) NOT NULL,
-  `deskripsiWisata` varchar(256) NOT NULL,
-  `alamatWisata` varchar(128) NOT NULL
+  `nilaiWisata` float NOT NULL,
+  `gambar` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `wisata`
+--
+
+INSERT INTO `wisata` (`idWisata`, `namaWisata`, `nilaiWisata`, `gambar`) VALUES
+(1, 'Desa Ambender', 0.093, 'ambender.jpeg'),
+(2, 'Desa Bulungan Barat', 0.093, 'bulunganBarat.jpeg'),
+(3, 'Desa Bulungan Branta', 0.087, 'bulunganBranta.jpeg'),
+(4, 'Desa Bulungan Haji', 0.09, 'bulunganHaji.jpeg'),
+(5, 'Desa Bulungan Timur', 0.09, 'bulanganTimur.jpeg'),
+(6, 'Desa Palesanggar', 0.094, 'palesanggar.png'),
+(7, 'Desa Pasanggar', 0.094, 'pasanggar.jpg'),
+(8, 'Desa Plakpak', 0.103, 'plakpak.jpeg'),
+(9, 'Desa Tebul Timur', 0.88, 'tebulTimur.jpg'),
+(10, 'Desa Tebul Barat', 0.088, 'tebulBarat.jpeg'),
+(11, 'Desa Tlagah', 0.084, 'tlagah.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -123,7 +139,7 @@ ALTER TABLE `visitor`
 -- AUTO_INCREMENT for table `wisata`
 --
 ALTER TABLE `wisata`
-  MODIFY `idWisata` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idWisata` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
