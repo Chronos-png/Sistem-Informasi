@@ -1,3 +1,9 @@
+<?php
+    include("database/database.php");
+    $alt = getAlternatifDependsOnKriteria();
+    $crit = getAllKriteria();
+    $i=1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +20,26 @@
 <body>
     <?php include("header.php") ?>
     <div class="judul">
-        <h2>Data Alternatif</h2>
+        <h2>Data Alternatif Berdasarkan Kriterianya</h2>
     </div>
     
-
-
+    <?php foreach($crit as $macamkriteria){?>
+        <div class="kriteria_x_alt" style="width: 100%; padding-left: 10%; padding-right: 10%;"> 
+            <?php $kriteria = getKriteria($macamkriteria["id_Data_Kriteria"]);?>
+            <h5><?= $i." ".$kriteria["Nama_Kriteria"]?></h5>
+            <ul class="list-group list-group-flush" style="width: 100%;padding-left: 2.5%;padding-right: 2.5%;margin:20px;">
+            <?php foreach($alt as $a){?>
+                <?php if($a["id_Kriteria"] == $i){?>
+                <li class="list-group-item"><div class="start"><?= $a["Nama_Alternatif"]?></div><div class="end"><?= $a["Nilai_Data_Alternatif"]?></div></li>
+                <?php }} ?>
+            </ul>
+        </div>
+    <?php 
+        $i++;
+        $a=[];
+    } 
+    ?>
+    
     <?php include("footer.php")?>
 </body>
 </html>
