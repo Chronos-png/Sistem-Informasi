@@ -20,13 +20,16 @@
 <body>
     <?php include("header.php") ?>
     <div class="judul">
-        <h2>Data Alternatif Berdasarkan Kriterianya</h2>
+        <h2>Kesimpulan Hasil Nilai Eigen</h2>
     </div>
-    
+    <div class="container d-flex align-items-center justify-content-center">
+        <b>Pada halaman ini akan ditampilkan nilai eigen dari hasil perhitungan AHP</b>
+    </div>
+
     <?php foreach($crit as $macamkriteria){?>
-        <div class="kriteria_x_alt" style="width: 100%; padding-left: 10%; padding-right: 10%;"> 
+        <div class="kriteria_x_alt mt-5" style="width: 100%; padding-left: 10%; padding-right: 10%;"> 
             <?php $kriteria = getKriteria($macamkriteria["id_Data_Kriteria"]);?>
-            <h5><?= $i." ".$kriteria["Nama_Kriteria"]?></h5>
+            <h5><?= $i." ".$kriteria["Nama_Kriteria"]." : ".$kriteria["nilai_kriteria"]?></h5>
             <ul class="list-group list-group-flush" style="width: 100%;padding-left: 2.5%;padding-right: 2.5%;margin:20px;">
             <?php foreach($alt as $a){?>
                 <?php if($a["id_Kriteria"] == $i){?>
@@ -37,7 +40,7 @@
     <?php 
         $i++;
         $a=[];
-    } 
+    }
     ?>
     
     <?php include("footer.php")?>

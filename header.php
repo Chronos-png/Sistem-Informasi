@@ -52,8 +52,7 @@
 						<a class="dropdown-item" href="#">Nilai Kriteria</a>
 					</div> -->
             	</li>
-	        	<li class="nav-item"><a href="Data_Alternatif.php" class="nav-link">Data Alternatif</a></li>
-	        	<li class="nav-item"><a href="Data_Kriteria.php" class="nav-link">Data Kriteria</a></li>
+	        	<li class="nav-item"><a href="data_eigen.php" class="nav-link">Data Eigen</a></li>
 	          	<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metode AHP</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown04">	
