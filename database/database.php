@@ -38,4 +38,12 @@ function getAllKriteria(){
         echo $err->getMessage();
     }
 }
+
+function addAdmin($data){
+    $statement = DB->prepare("INSERT INTO admin (namaAdmin, alamatAdmin, passAdmin) VALUES(:username,:alamat,:pass)");
+    $statement->bindvalue(":username",$data["username"]);
+    $statement->bindvalue(":alamat",$data["alamat"]);
+    $statement->bindvalue(":pass",$data["pass"]);
+    $statement->execute();
+}
 ?>

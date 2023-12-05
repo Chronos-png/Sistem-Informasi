@@ -44,7 +44,7 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item active"><a href="index.php" class="nav-link">Beranda</a></li>
+	        	<li class="nav-item"><a href="index.php" class="nav-link">Beranda</a></li>
 						<!-- <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analisa</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -61,6 +61,7 @@
 					</div>
 				</li>
 				<li class="nav-item"><a href="Rekomendasi.php" class="nav-link">Analisa Hasil Rekomendasi</a></li>
+				<li class="nav-item"><a href="login.php" class="nav-link">Login Admin</a></li>
 	        </ul>
 	      </div>
 	    </div>
