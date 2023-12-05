@@ -30,26 +30,8 @@ var_dump($data);
     <div class="judul">
       <h2>Data Kriteria</h2>
     </div>
-    <div class="h-100 d-flex align-items-center justify-content-center">
-      <p>
-        Pada proses perhitungan metode AHP. Pada bagian perhitungan data
-        kriteria diperoleh <b>prioritas</b> kriteria sebagai berikut :
-      </p>
-    </div>
 
-    <div class="container">
-    <ol class="list-group list-group-numbered">
-
-      <li
-        class="list-group-item d-flex justify-content-between align-items-start"
-      >
-        <div class="ms-2 me-auto">
-          <div class="fw-bold">Subheading</div>
-          Content for list item
-        </div>
-      </li>
-    </ol>
-    </div>
+    
 
     <?php include("footer.php")?>
   </body>
