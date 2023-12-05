@@ -1,6 +1,20 @@
 <?php
     include("database/database.php");
     $data = GetDataWisata();
+    $desc = array(
+        "Yang Pertama ada desa Plakpak yang Memiliki Nilai 0.10319",
+        "Posisi Kedua ada Desa Palesanggar dengan Nilai 0.0941",
+        "Posisi Ketiga ada Desa Ambender dengan Nilai 0.09388",
+        "Posisi KeEmpat ada Desa Pasanggar dengan Nilai 0.09345",
+        "Posisi KeLima ada Desa Bulungan Barat dengan Nilai 0.09233",
+        "Posisi KeEnam ada Desa Bulungan Haji dengan Nilai 0.08945",
+        "Posisi KeTujuh ada Desa Bulungan Timur dengan Nilai 0.08945",
+        "Posisi KeDelapan ada Desa Tebul Barat dengan Nilai 0.08767",
+        "Posisi KeSembilan ada Desa Tebul Timur dengan Nilai 0.08745",
+        "Posisi KeSepuluh ada Desa Bulungan Branta dengan Nilai 0.08679",
+        "Posisi KeSebelas ada Desa Tlagah dengan Nilai 0.0839"
+    );
+    $i = 0;
 ?>
 
 <!DOCTYPE html>
@@ -30,13 +44,13 @@
             <div class="col-md-8">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $wisata["namaWisata"]?></h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text" style="width: 50vw;"><span><?php echo $desc[$i]?></span></p>
                 <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
             </div>
             </div>
         </div>
         </div>
-    <?php }?>
+    <?php $i++; }?>
     </div>
 
     <?php include("footer.php")?>
