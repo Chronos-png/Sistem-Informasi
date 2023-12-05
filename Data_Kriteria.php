@@ -1,10 +1,3 @@
-<?php 
-require "database/database.php";
-$data=getDataWisata();
-var_dump($data);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,8 +23,6 @@ var_dump($data);
     <div class="judul">
       <h2>Data Kriteria</h2>
     </div>
-
-    
 
     <?php include("footer.php")?>
   </body>
