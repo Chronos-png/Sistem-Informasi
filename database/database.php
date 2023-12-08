@@ -91,4 +91,30 @@ function deleteWisata($id)
         unlink('si/' . $data[0]["gambar"]);
     }
 }
+
+function editWisata($data)
+{
+    $id = $data["id"];
+    $nama = htmlspecialchars($data["nama"]);
+    $eigen = htmlspecialchars($data["nilai"]);
+    $gambarLama = $data["gambarLama"];
+
+    if ($_FILES["gambar"]["error"] === 4) {
+        $gambar = $gambarLama;
+    } else {
+        $gambar = upload();
+        $oldGambar = selectData("SELECT gambar FROM wisata WHERE idWisata=$id");
+        if(file_exists('si/' . $oldGambar[0]["gambar"])){
+            unlink('si/' . $oldGambar[0]["gambar"]);
+        }
+    };
+    $query = "UPDATE wisata 
+    SET namaWisata=:nama, gambar=:gambar, nilaiWisata=:eigen
+    WHERE idWisata=$id";
+    $stmt = DB->prepare($query);
+    $stmt->bindValue(":nama", $nama);
+    $stmt->bindValue(":gambar", $gambar);
+    $stmt->bindValue(":eigen", $eigen);
+    $stmt->execute();
+};
 ?>
